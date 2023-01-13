@@ -95,9 +95,8 @@ if(as.vector(Sys.info()["sysname"]) == "Darwin"){
     sf::st_make_valid()
 
     
-    
     # load the vector hotspots
-    load("D:/OneDrive/proyects/hotspots_eggs/8.RData/30_veracruz/betas/30_veracruz_zinb1_betas.RData")
+     load("D:/OneDrive/proyects/hotspots_eggs/8.RData/17_morelos/betas/17_morelos_zinb1_betas.RData")
     
 } else if(as.vector(Sys.info()["sysname"]) == "Linux"){
     
@@ -149,9 +148,12 @@ hotspots_map(cve_ent = "17",
 ### [**Cuernavaca**]{style="color:#990000"}
 
 ```{r vector_hotspots_cuernavaca, dpi = 300, warning=FALSE, message=FALSE}
-eggs_hotspots_intensity_map_year(betas = betas_30_veracruz,
-                                 locality = "Tuxpan de Rodríguez Cano",
-                                 cve_ent = "30",
+eggs_hotspots_intensity_map_year(betas = betas_17_morelos,
+                                 locality = c("Cuernavaca",
+                                              "Jiutepec",
+                                              "Emiliano Zapata",
+                                              "Temixco"),
+                                 cve_ent = "17",
                                  palette = rcartocolor::carto_pal,
                                  name = "SunsetDark")
 ```
