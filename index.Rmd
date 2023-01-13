@@ -157,3 +157,25 @@ eggs_hotspots_intensity_map_year(betas = betas_17_morelos,
                                  palette = rcartocolor::carto_pal,
                                  name = "SunsetDark")
 ```
+
+
+### [**Jojutla**]{style="color:#990000"}
+
+```{r vector_hotspots_jojutla, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_17_morelos,
+                                 locality = c("Jujutla"),
+                                 cve_ent = "17",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
+### [**Cuautla**]{style="color:#990000"}
+
+```{r vector_hotspots_cuautla, dpi = 300, warning=FALSE, message=FALSE}
+eggs_hotspots_intensity_map_year(betas = betas_17_morelos,
+                                 locality = c("Cuautla"),
+                                 cve_ent = "17",
+                                 palette = rcartocolor::carto_pal,
+                                 name = "SunsetDark")
+```
+
